@@ -11,7 +11,6 @@ automations:
     if:
       - {{ branch.base == "main" }}
       - {{ pr.labels | includes(term="gitstream-auto-merge") }}
-      # - {{ pr.author == ""}
     run:
       - action: merge@v1
         args:
