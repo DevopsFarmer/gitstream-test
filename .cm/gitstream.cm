@@ -9,7 +9,7 @@ automations:
   # Add a label that indicates how many minutes it will take to review the PR.
   Auto_Merge_gitstream_PRs_to_Main:
     if:
-      - {{ branch == "test2" }}
+      - {{ branch == "main" }}
       - {{ label == "gitstream-auto-merge" }}
       - {{ checks.passed == true }}
       - {{ author == "github-actions[bot]" }}
