@@ -29,5 +29,4 @@ jobs:
           body: Auto-created Pull Request
           branch: ${{ github.event.inputs.source_branch }}
           base: main
-          labels: |
-            gitstream-auto-merge
+          labels: gitstream-auto-merge,ga-auto-pr
