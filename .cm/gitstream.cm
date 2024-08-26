@@ -10,7 +10,7 @@ automations:
   Auto_Merge_gitstream_PRs_to_Main:
     if:
       - all:
-          - branch == "main"
+          - branch == "test2"
           - label == "gitstream-auto-merge"
           - checks.passed == true
           - author == "github-actions[bot]"
