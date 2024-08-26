@@ -11,6 +11,8 @@ automations:
     if:
       - branch == "main"
       - label == "gitstream-auto-merge"
+      - checks.passed == true
+      - author == "github-actions[bot]"
     run:
       - action: merge@v1
         args:
